@@ -56,21 +56,21 @@ public class datasetSiswa {
     public void insertTmptLhrSiswa(String isi){
         this.tmpt_lhr_siswa.add(isi);
     }
-    public ArrayList<String> getRecordTampatLhrSiswa(){
+    public ArrayList<String> getRecordTmptLhrSiswa(){
         return this.tmpt_lhr_siswa; 
     }
     
     public void insertTglLhrSiswa(String isi){
         this.tgl_lahir_siswa.add(isi);
     }
-    public ArrayList<String> getRecordTgllLhrSiswa(){
+    public ArrayList<String> getRecordTglLhrSiswa(){
         return this.tgl_lahir_siswa; 
     }
     
-    public void insertAgmGuru(String isi){
+    public void insertAgmSiswa(String isi){
         this.agm_siswa.add(isi);
     }
-    public ArrayList<String> getRecordAgmGuru(){
+    public ArrayList<String> getRecordAgmSiswa(){
         return this.agm_siswa; 
     }
     
