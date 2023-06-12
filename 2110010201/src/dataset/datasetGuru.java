@@ -112,7 +112,7 @@ jab= new ArrayList<String>();
     }
     
      public void insertPendGuru(String isi){
-        this.pass_guru.add(isi);
+        this.pend_guru.add(isi);
     }
     public ArrayList<String> getRecordPendGuru(){
         return this.pend_guru; 
@@ -131,4 +131,23 @@ jab= new ArrayList<String>();
     public ArrayList<String> getRecordJab(){
         return this.jab; 
     }
+    
+     public void insertGuru(String nik, String namaGuru, String tmptLhrGuru, String tglLhrGuru, 
+            String passGuru, String agmGuru,String jkGuru, String tlpGuru, String emailGuru,
+            String almtGuru, String pendGuru, String statusKawin, String Jab){
+        this.nik.add(nik);
+        this.nama_guru.add(namaGuru);
+        this.tmpt_lhr_guru.add(tmptLhrGuru);
+        this.tgl_lhr_guru.add(tglLhrGuru);
+        this.pass_guru.add(passGuru);
+        this.agm_guru.add(agmGuru);
+        this.jk_guru.add(jkGuru);
+        this.tlp_guru.add(tlpGuru);
+        this.email_guru.add(emailGuru);
+        this.almt_guru.add(almtGuru);
+        this.pend_guru.add(pendGuru);
+        this.status_kawin.add(statusKawin);
+        this.jab.add(Jab);
+        
+     }      
 }

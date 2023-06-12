@@ -28,10 +28,10 @@ public class datasetKelas {
             return this.kd_kelas;   
     }
         
-        public void insertKelas(String isi){
+        public void insertNmKelas(String isi){
             this.kelas.add(isi);
     }
-        public ArrayList<String> getRecordKelas(){
+        public ArrayList<String> getRecordNmKelas(){
             return this.kelas;
     }  
         public void insertKapasitas(String isi){
@@ -39,5 +39,11 @@ public class datasetKelas {
     }
         public ArrayList<String> getRecordKapasitas(){
             return this.kapasitas;   
+    }
+        public void insertKelas(int kdKelas, String NmKelas, String Kapasitas){
+        this.kd_kelas.add(kdKelas);
+        this.kelas.add(NmKelas);
+        this.kapasitas.add(Kapasitas);
+        
     }
 }   

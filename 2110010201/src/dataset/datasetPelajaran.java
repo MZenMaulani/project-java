@@ -38,4 +38,11 @@ public class datasetPelajaran {
     public ArrayList<Integer> getRecordKkm(){
         return this.kkm;   
     }    
+    
+    public void insertPelajaran(int kdPel, String nmPel, int Kkm){
+        
+        this.kd_pel.add(kdPel);
+        this.nm_pel.add(nmPel);
+        this.kkm.add(Kkm);
+    }
 }

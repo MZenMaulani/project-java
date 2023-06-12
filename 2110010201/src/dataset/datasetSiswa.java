@@ -14,7 +14,7 @@ public class datasetSiswa {
     private ArrayList<String> nis;
     private ArrayList<String> nm_siswa;
     private ArrayList<String> tmpt_lhr_siswa;
-    private ArrayList<String> tgl_lahir_siswa;
+    private ArrayList<String> tgl_lhr_siswa;
     private ArrayList<String> agm_siswa;
     private ArrayList<String> jk_siswa;
     private ArrayList<String> almt_siswa;
@@ -28,7 +28,7 @@ public class datasetSiswa {
     nis = new ArrayList<String>();
     nm_siswa = new ArrayList<String>();
     tmpt_lhr_siswa = new ArrayList<String>();
-    tgl_lahir_siswa = new ArrayList<String>();
+    tgl_lhr_siswa = new ArrayList<String>();
     agm_siswa = new ArrayList<String>();
     jk_siswa = new ArrayList<String>();
     almt_siswa = new ArrayList<String>();
@@ -61,10 +61,10 @@ public class datasetSiswa {
     }
     
     public void insertTglLhrSiswa(String isi){
-        this.tgl_lahir_siswa.add(isi);
+        this.tgl_lhr_siswa.add(isi);
     }
     public ArrayList<String> getRecordTglLhrSiswa(){
-        return this.tgl_lahir_siswa; 
+        return this.tgl_lhr_siswa; 
     }
     
     public void insertAgmSiswa(String isi){
@@ -121,5 +121,23 @@ public class datasetSiswa {
     }
     public ArrayList<String> getRecordNmWali(){
         return this.nm_wali; 
+    }
+    
+    public void insertSiswa(String Nis, String nmSiswa, String tmptLhrSiswa, String tglLhrSiswa, 
+            String agmSiswa, String jkSiswa, String almtSiswa, String tlpSiswa, String asalSekolah,
+            int kdKelas, String Kondisi, String nmWali){
+    this.nis.add(Nis);
+    this.nm_siswa.add(nmSiswa);
+    this.tmpt_lhr_siswa.add(tmptLhrSiswa);
+    this.tgl_lhr_siswa.add(tglLhrSiswa);
+    this.agm_siswa.add(agmSiswa);
+    this.jk_siswa.add(jkSiswa);
+    this.almt_siswa.add(almtSiswa);
+    this.tlp_siswa.add(tlpSiswa);
+    this.asal_sekolah.add(asalSekolah);
+    this.kd_kelas.add(kdKelas);
+    this.kondisi.add(Kondisi);
+    this.nm_wali.add(nmWali);
+        
     }
 }

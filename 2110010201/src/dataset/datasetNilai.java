@@ -84,4 +84,20 @@ public class datasetNilai {
     public ArrayList<Integer> getRecordAbsen(){
         return this.absen; 
     }
+    
+    public void insertNilai(int kdKelas, String Nis, String Nik, int kdPel, 
+        int nilUts, int nilUas, int nilTgs,int Absen ){
+        
+        this.kd_kelas.add(kdKelas);
+        this.nis.add(Nis);
+        this.nik.add(Nik);
+        this.kd_pel.add(kdPel);
+        this.nil_uts.add(nilUts);
+        this.nil_uas.add(nilUas);
+        this.nil_tgs.add(nilTgs);
+        this.absen.add(Absen);
+        
+        
+        
+    }
 }

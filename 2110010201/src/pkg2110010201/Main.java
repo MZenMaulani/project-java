@@ -3,8 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package pkg2110010201;
+
+
 import Sia.*;
 import dataset.*;
+import forms.frameUtama;
 
 
 /**
@@ -65,7 +68,7 @@ public class Main {
        datasetNilai Nilai = new datasetNilai();
        
        //Menginput data Array List pada setiap tabel
-       Guru.insertNik("033123");
+       Guru.insertNik("033");
        Guru.insertNamaGuru("Jamal");
        Guru.insertTmptLhrGuru("Banjarmasin");
        Guru.insertTglLhrGuru("01-01-2001");
@@ -78,10 +81,14 @@ public class Main {
        Guru.insertPendGuru("S1 Pendidikan");
        Guru.insertStatusKawin("Belum");
        Guru.insertJab("Anggota");
+       Guru.insertGuru("033", "Jamal", "banjarmasin", "01-01-2001", "jamal23",
+              "Islam", "L", "081234567890", "jamal03@gmail.com", "Jl.Manggis",
+              "S1 Pendidikan","Belum","Anggota");
        
-       Siswa.insertNis("022123");
+       Siswa.insertNis("022");
        Siswa.insertNmSiswa("Zen");
        Siswa.insertTmptLhrSiswa("Banjarmasin");
+       Siswa.insertTglLhrSiswa("09-05-02");
        Siswa.insertAgmSiswa("Islam");
        Siswa.insertJkSiswa("L");
        Siswa.insertAlmtSiswa("Jl.Simpang Tangga");
@@ -90,30 +97,38 @@ public class Main {
        Siswa.insertKdKelas(012);
        Siswa.insertKondisi("Sehat");
        Siswa.insertNmWali("Noor");
-        
+       Siswa.insertSiswa("022","Zen","Banjarmasin","09-05-02","Islam","L","Jl.Simpang Tangga",
+               "081234567891","SMKN 1 Simpang empat",012,"Sehat","Noor");
+   
        Kelas.insertKdKelas(012);
-       Kelas.insertKelas("C");
+       Kelas.insertNmKelas("C");
        Kelas.insertKapasitas("35");
+       Kelas.insertKelas(012 ,"C","35");
         
        Jadwal.insertIdJadwal(002);
        Jadwal.insertKdKelas(012);
        Jadwal.insertKdPel(002);
-       Jadwal.insertNik("033123");
+       Jadwal.insertNik("033");
        Jadwal.insertJamMasuk("08:00");
        Jadwal.insertHariMasuk("Rabu");
+       Jadwal.insertJadwal(002, 012, 002, "033", "08:00",
+               "Rabu");
        
        Pelajaran.insertKdPel(022);
        Pelajaran.insertNmPel("B.Indonesia");
        Pelajaran.insertKkm(70);
+       Pelajaran.insertPelajaran(022,"B.Indonesia",70);
        
        Nilai.insertKdKelas(012);
-       Nilai.insertNis("022123");
-       Nilai.insertNik("033123");
+       Nilai.insertNis("022");
+       Nilai.insertNik("033");
        Nilai.insertKdPel(022);
        Nilai.insertNilUts(80);
        Nilai.insertNilUas(70);
        Nilai.insertNilTgs(80);
        Nilai.insertAbsen(1);
+       Nilai.insertNilai(012,"022","033",022,80,70,
+               80,1);
        
        
        //menampilkan data Array List
@@ -150,7 +165,7 @@ public class Main {
         System.out.println("\t");
         System.out.println("===============DATA KELAS==============");
         System.out.println(Kelas.getRecordKdKelas());
-        System.out.println(Kelas.getRecordKelas());
+        System.out.println(Kelas.getRecordNmKelas());
         System.out.println(Kelas.getRecordKapasitas());
         
         System.out.println("\t");
@@ -179,6 +194,8 @@ public class Main {
         System.out.println(Nilai.getRecordNilUas());
         System.out.println(Nilai.getRecordNilTgs());
         System.out.println(Nilai.getRecordAbsen());
+        
+        new frameUtama().setVisible(true);
     }
     
 }

@@ -66,4 +66,16 @@ public class datasetJadwal {
     public ArrayList<String> getRecordHariMasuk(){
         return this.hari_masuk; 
     }
+    
+    public void insertJadwal(int idJadwal, int kdKelas, int kdPel, String Nik, 
+        String jamMasuk, String hariMasuk){
+        this.id_jadwal.add(idJadwal);
+        this.kd_kelas.add(kdKelas);
+        this.kd_pel.add(kdPel);
+        this.nik.add(Nik);
+        this.jam_masuk.add(jamMasuk);
+        this.hari_masuk.add(hariMasuk);
+        
+        
+    }
 }  

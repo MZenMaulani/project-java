@@ -12,7 +12,7 @@ public class tblsiswa {
     private String nis;
     private String nm_siswa;
     private String tmpt_lhr_siswa;
-    private String tgl_lahir_siswa;
+    private String tgl_lhr_siswa;
     private String agm_siswa;
     private String jk_siswa;
     private String almt_siswa;
@@ -46,10 +46,10 @@ public class tblsiswa {
     }
     
     public void setTglLahirSiswa(String TanggalLahirSiswa) {
-        this.tgl_lahir_siswa=TanggalLahirSiswa;
+        this.tgl_lhr_siswa=TanggalLahirSiswa;
     }
     public String getTglLahirSiswa() {
-        return this.tgl_lahir_siswa;
+        return this.tgl_lhr_siswa;
     }
     
     public void setAgmSiswa(String AgamaSiswa) {

@@ -23,10 +23,10 @@ public class tblkelas {
         return this.kd_kelas;
     }
     
-   public void setKelas(String Kelas) {
+   public void setNmKelas(String Kelas) {
         this.kelas=Kelas;
     }
-    public String getKelas() {
+    public String getNmKelas() {
         return this.kelas;
     } 
     
