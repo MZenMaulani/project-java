@@ -29,6 +29,7 @@ public class Main {
         tblpelajaran pelajaran = new tblpelajaran();
         tblnilai nilai =new tblnilai();
         
+/*
         //set
         guru.setNik("633123");
         guru.setNamaGuru("Jamal");
@@ -58,6 +59,8 @@ public class Main {
         System.out.println("Pendidikan          : " +guru.getPendGuru());
         System.out.println("Status Kawin        : " +guru.getStatusKawin());
         System.out.println("Jabatan             : " +guru.getJab());
+*/
+
        
        //Memasukkan Array List kedalam Object
        datasetGuru Guru = new datasetGuru();
